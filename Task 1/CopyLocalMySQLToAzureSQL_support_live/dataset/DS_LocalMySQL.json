@@ -1,0 +1,16 @@
+{
+    "name": "DS_LocalMySQL",
+    "properties": {
+        "linkedServiceName": {
+            "referenceName": "Odbc1",
+            "type": "LinkedServiceReference"
+        },
+        "annotations": [],
+        "type": "OdbcTable",
+        "schema": [],
+        "typeProperties": {
+            "tableName": "`employees`"
+        }
+    },
+    "type": "Microsoft.DataFactory/factories/datasets"
+}

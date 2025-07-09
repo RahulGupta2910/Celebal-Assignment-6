@@ -1,0 +1,36 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "factoryName": {
+            "value": "ADF-SHIR-Factory"
+        },
+        "Odbc1_connectionString": {
+            "value": ""
+        },
+        "Odbc1_password": {
+            "value": ""
+        },
+        "LS_AzureSQL_password": {
+            "value": ""
+        },
+        "Odbc1_properties_typeProperties_userName": {
+            "value": "root"
+        },
+        "LS_AzureSQL_properties_typeProperties_server": {
+            "value": "rahulsqlserver2025.database.windows.net"
+        },
+        "LS_AzureSQL_properties_typeProperties_database": {
+            "value": "TargetSQLDB"
+        },
+        "LS_AzureSQL_properties_typeProperties_userName": {
+            "value": "azureadmin"
+        },
+        "containerUri": {
+            "value": ""
+        },
+        "containerSasToken": {
+            "value": ""
+        }
+    }
+}

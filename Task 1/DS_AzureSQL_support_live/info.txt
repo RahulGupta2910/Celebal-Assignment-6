@@ -1,0 +1,6 @@
+selected resource name:		DS_AzureSQL
+selected resource type:		dataset
+factory name:			ADF-SHIR-Factory
+factory location:		centralindia
+subscription id:		4b697afd-e4c5-4b02-a867-3c947bb49a87
+time of download (UTC):		Wed, 09 Jul 2025 16:13:01 GMT
