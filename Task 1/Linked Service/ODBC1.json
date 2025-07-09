@@ -1,0 +1,21 @@
+{
+    "name": "Odbc1",
+    "type": "Microsoft.DataFactory/factories/linkedservices",
+    "properties": {
+        "annotations": [],
+        "type": "Odbc",
+        "typeProperties": {
+            "connectionString": {
+                "type": "SecureString",
+                "value": "**********"
+            },
+            "authenticationType": "Basic",
+            "userName": "root",
+            "encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiJmYTQwNzEwNy05NDYzLTQ1MDUtYWRiYi0wYjRiNTI5ZjMwZDciLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+        },
+        "connectVia": {
+            "referenceName": "SHIR-Local",
+            "type": "IntegrationRuntimeReference"
+        }
+    }
+}
