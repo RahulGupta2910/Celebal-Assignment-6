@@ -1,0 +1,24 @@
+{
+    "name": "BlobDataset",
+    "properties": {
+        "linkedServiceName": {
+            "referenceName": "AzureBlobLS",
+            "type": "LinkedServiceReference"
+        },
+        "annotations": [],
+        "type": "DelimitedText",
+        "typeProperties": {
+            "location": {
+                "type": "AzureBlobStorageLocation",
+                "fileName": "employees.csv",
+                "folderPath": "output",
+                "container": "output-data"
+            },
+            "columnDelimiter": ",",
+            "escapeChar": "\\",
+            "firstRowAsHeader": true,
+            "quoteChar": "\""
+        },
+        "schema": []
+    }
+}

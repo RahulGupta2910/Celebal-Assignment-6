@@ -1,0 +1,30 @@
+{
+    "name": "SQLDataset",
+    "properties": {
+        "linkedServiceName": {
+            "referenceName": "AzureSqlLS",
+            "type": "LinkedServiceReference"
+        },
+        "annotations": [],
+        "type": "AzureSqlTable",
+        "schema": [
+            {
+                "name": "ID",
+                "type": "int",
+                "precision": 10
+            },
+            {
+                "name": "Name",
+                "type": "varchar"
+            },
+            {
+                "name": "Position",
+                "type": "varchar"
+            }
+        ],
+        "typeProperties": {
+            "schema": "dbo",
+            "table": "Employees"
+        }
+    }
+}

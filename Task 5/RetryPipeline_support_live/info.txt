@@ -1,0 +1,6 @@
+selected resource name:		RetryPipeline
+selected resource type:		pipeline
+factory name:			RetryDemoADF
+factory location:		centralindia
+subscription id:		4b697afd-e4c5-4b02-a867-3c947bb49a87
+time of download (UTC):		Fri, 11 Jul 2025 06:16:28 GMT
