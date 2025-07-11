@@ -1,0 +1,33 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "factoryName": {
+            "value": "ADF-Incremental-Load-Celebal"
+        },
+        "LS_SQL_Source_password": {
+            "value": ""
+        },
+        "LS_SQL_Destination_password": {
+            "value": ""
+        },
+        "LS_SQL_Source_properties_typeProperties_server": {
+            "value": "adf-sql-server-rahul.database.windows.net"
+        },
+        "LS_SQL_Source_properties_typeProperties_database": {
+            "value": "SourceDB"
+        },
+        "LS_SQL_Source_properties_typeProperties_userName": {
+            "value": "sqladmin"
+        },
+        "LS_SQL_Destination_properties_typeProperties_server": {
+            "value": "adf-sql-server-rahul.database.windows.net"
+        },
+        "LS_SQL_Destination_properties_typeProperties_database": {
+            "value": "DestinationDB"
+        },
+        "LS_SQL_Destination_properties_typeProperties_userName": {
+            "value": "sqladmin"
+        }
+    }
+}
