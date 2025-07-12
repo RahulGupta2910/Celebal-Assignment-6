@@ -1,0 +1,35 @@
+{
+    "name": "LastSaturdayTrigger",
+    "properties": {
+        "annotations": [],
+        "runtimeState": "Started",
+        "pipelines": [
+            {
+                "pipelineReference": {
+                    "referenceName": "LastSaturdayPipeline",
+                    "type": "PipelineReference"
+                }
+            }
+        ],
+        "type": "ScheduleTrigger",
+        "typeProperties": {
+            "recurrence": {
+                "frequency": "Week",
+                "interval": 1,
+                "startTime": "2025-07-11T11:10:00",
+                "timeZone": "India Standard Time",
+                "schedule": {
+                    "minutes": [
+                        47
+                    ],
+                    "hours": [
+                        11
+                    ],
+                    "weekDays": [
+                        "Saturday"
+                    ]
+                }
+            }
+        }
+    }
+}
