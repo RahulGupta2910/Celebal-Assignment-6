@@ -1,0 +1,32 @@
+{
+    "name": "Output_CSV",
+    "properties": {
+        "linkedServiceName": {
+            "referenceName": "Blob_Output_LinkedService",
+            "type": "LinkedServiceReference"
+        },
+        "annotations": [],
+        "type": "DelimitedText",
+        "typeProperties": {
+            "location": {
+                "type": "AzureBlobStorageLocation",
+                "fileName": "output.csv",
+                "container": "output-data"
+            },
+            "columnDelimiter": ",",
+            "escapeChar": "\\",
+            "firstRowAsHeader": true,
+            "quoteChar": "\""
+        },
+        "schema": [
+            {
+                "name": "French",
+                "type": "String"
+            },
+            {
+                "name": "English",
+                "type": "String"
+            }
+        ]
+    }
+}

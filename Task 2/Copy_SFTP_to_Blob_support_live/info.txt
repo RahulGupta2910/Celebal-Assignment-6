@@ -1,0 +1,6 @@
+selected resource name:		Copy_SFTP_to_Blob
+selected resource type:		pipeline
+factory name:			adf-sftp-pipeline
+factory location:		centralindia
+subscription id:		4b697afd-e4c5-4b02-a867-3c947bb49a87
+time of download (UTC):		Sun, 13 Jul 2025 06:32:34 GMT

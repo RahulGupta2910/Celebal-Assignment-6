@@ -1,0 +1,21 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "factoryName": {
+            "value": "adf-sftp-pipeline"
+        },
+        "SFTP_LinkedService_password": {
+            "value": ""
+        },
+        "Blob_Output_LinkedService_connectionString": {
+            "value": ""
+        },
+        "SFTP_LinkedService_properties_typeProperties_host": {
+            "value": "sftprahuldev2025celebal.blob.core.windows.net"
+        },
+        "SFTP_LinkedService_properties_typeProperties_userName": {
+            "value": "sftprahuldev2025celebal.sftpuser"
+        }
+    }
+}

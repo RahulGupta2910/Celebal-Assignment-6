@@ -1,0 +1,31 @@
+{
+    "name": "SFTP_dataset",
+    "properties": {
+        "linkedServiceName": {
+            "referenceName": "SFTP_LinkedService",
+            "type": "LinkedServiceReference"
+        },
+        "annotations": [],
+        "type": "DelimitedText",
+        "typeProperties": {
+            "location": {
+                "type": "SftpLocation",
+                "fileName": "french_words.csv"
+            },
+            "columnDelimiter": ",",
+            "escapeChar": "\\",
+            "firstRowAsHeader": true,
+            "quoteChar": "\""
+        },
+        "schema": [
+            {
+                "name": "French",
+                "type": "String"
+            },
+            {
+                "name": "English",
+                "type": "String"
+            }
+        ]
+    }
+}

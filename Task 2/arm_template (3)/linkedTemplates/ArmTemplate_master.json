@@ -1,0 +1,70 @@
+{
+    "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "factoryName": {
+            "type": "string",
+            "metadata": "Data Factory name",
+            "defaultValue": "adf-sftp-pipeline"
+        },
+        "SFTP_LinkedService_password": {
+            "type": "secureString",
+            "metadata": "Secure string for 'password' of 'SFTP_LinkedService'"
+        },
+        "Blob_Output_LinkedService_connectionString": {
+            "type": "secureString",
+            "metadata": "Secure string for 'connectionString' of 'Blob_Output_LinkedService'"
+        },
+        "SFTP_LinkedService_properties_typeProperties_host": {
+            "type": "string",
+            "defaultValue": "sftprahuldev2025celebal.blob.core.windows.net"
+        },
+        "SFTP_LinkedService_properties_typeProperties_userName": {
+            "type": "string",
+            "defaultValue": "sftprahuldev2025celebal.sftpuser"
+        },
+        "containerUri": {
+            "type": "string",
+            "metadata": "URI to storage account containing linked ARM templates"
+        },
+        "containerSasToken": {
+            "type": "string",
+            "metadata": "Sas token to storage account containing linked ARM templates"
+        }
+    },
+    "variables": {
+        "factoryId": "[concat('Microsoft.DataFactory/factories/', parameters('factoryName'))]"
+    },
+    "resources": [
+        {
+            "name": "adf-sftp-pipeline_ArmTemplate_0",
+            "type": "Microsoft.Resources/deployments",
+            "apiVersion": "2024-03-01",
+            "properties": {
+                "mode": "incremental",
+                "templateLink": {
+                    "uri": "[concat(parameters('containerUri'), '/ArmTemplate_0.json', parameters('containerSasToken'))]",
+                    "contentVersion": "1.0.0.0"
+                },
+                "parameters": {
+                    "factoryName": {
+                        "value": "[parameters('factoryName')]"
+                    },
+                    "SFTP_LinkedService_password": {
+                        "value": "[parameters('SFTP_LinkedService_password')]"
+                    },
+                    "Blob_Output_LinkedService_connectionString": {
+                        "value": "[parameters('Blob_Output_LinkedService_connectionString')]"
+                    },
+                    "SFTP_LinkedService_properties_typeProperties_host": {
+                        "value": "[parameters('SFTP_LinkedService_properties_typeProperties_host')]"
+                    },
+                    "SFTP_LinkedService_properties_typeProperties_userName": {
+                        "value": "[parameters('SFTP_LinkedService_properties_typeProperties_userName')]"
+                    }
+                }
+            },
+            "dependsOn": []
+        }
+    ]
+}
