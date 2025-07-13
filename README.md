@@ -7,15 +7,15 @@ This repository contains five end-to-end Azure Data Factory (ADF) projects that 
 1. Self-hosted Integration Runtime (SHIR) for Local to Cloud Data Flow
 Objective: Extract data securely from an on-premises/local SQL Server and load it into an Azure SQL Database.
 
- Key Features:
-
-   Self-hosted Integration Runtime (SHIR) setup on a local machine.
-   
-   Secure data movement using encrypted connection.
-   
-   Pipeline to read from local SQL Server and load to Azure SQL Database.
-   
-   Enables cloud-based analytics for on-prem data.
+     Key Features:
+    
+       Self-hosted Integration Runtime (SHIR) setup on a local machine.
+       
+       Secure data movement using encrypted connection.
+       
+       Pipeline to read from local SQL Server and load to Azure SQL Database.
+       
+       Enables cloud-based analytics for on-prem data.
 
 2. FTP/SFTP Data Extraction to Azure
 Objective: Connect to an FTP/SFTP server, extract files (e.g., .csv, .json), and load them into Azure SQL Database.
